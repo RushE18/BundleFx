@@ -25,13 +25,13 @@ body {
 
 .page {
     width: calc(100% - 40px); /* Keeps it within the viewport */
-    max-width: 800px;
+    max-width: 1000px;
     text-align: center;
     background-color: #161b22;
-    padding: 30px;
-    margin: 20px auto; /* Centers the page */
+    padding: 50px;
+    margin: 30px auto; /* Centers the page */
     box-shadow: 0 0 15px rgba(88, 166, 255, 0.3);
-    border-radius: 15px;
+    border-radius: 50px;
     transition: transform 0.3s;
     overflow: hidden; /* Prevents content overflow */
 }
