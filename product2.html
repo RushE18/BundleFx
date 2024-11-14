@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BundleFX</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Scroll Progress Bar -->
+    <div id="progressBar"></div>
+
+    <!-- Vertical Container -->
+    <div class="vertical-container">
+        <!-- Page 1: Glitch Pack Main Page -->
+        <div class="page">
+            <!-- Product Image -->
+            <img src="45000+.png" alt="Glicth Pack Video Assets">
+            <!-- Buy Now Button with Payment Link -->
+            <a href="https://rzp.io/rzp/ZsBhowRQ" class="button">Buy Now</a>
+            
+            <!-- Countdown Timer -->
+            <div id="countdown" class="countdown-frame">
+                <div class="countdown-segment days">
+                    <span class="value">0</span>
+                    <span class="label">Days</span>
+                </div>
+                <div class="countdown-segment hours">
+                    <span class="value">0</span>
+                    <span class="label">Hours</span>
+                </div>
+                <div class="countdown-segment minutes">
+                    <span class="value">0</span>
+                    <span class="label">Minutes</span>
+                </div>
+                <div class="countdown-segment seconds">
+                    <span class="value">0</span>
+                    <span class="label">Seconds</span>
+                </div>
+            </div>
+
+            <!-- Glitch Pack Product Description -->
+            <p class="product-description">
+                Dive into the world of Glitch effects with this amazing Glicth Pack! Perfect for video creators who want to add that chaotic, digital distortion style to their footage. With unique assets and special effects, this pack will elevate your videos and give them a futuristic edge.
+            </p>
+
+            <!-- Horizontal Container for Product Links -->
+            <div class="horizontal-container">
+                <!-- Box 1 Replaced with Image -->
+                <a href="index.html" class="box-link">
+                    <div class="box-container">
+                        <!-- Image Replacing Box 1 -->
+                        <img src="35000+.png" alt="35000+ Glitch Effects" class="box-image">
+                        <div class="product-name">Glitch Effect 1</div>
+                    </div>
+                </a>
+            
+                <!-- Box 2 for Glitch Pack 2 -->
+                <a href="product1.html" class="box-link">
+                    <div class="box-container">
+                        <!-- Image Replacing Box 1 -->
+                        <img src="Glicth.png" alt="35000+ Glitch Effects" class="box-image">
+                        <div class="product-name">Glitch Effect 1</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+<!-- Page 2: Bundle Details -->
+<div class="page bundle-details">
+    <h2>Overlay Pack Bundle</h2>
+    <h3>Ideal for Enhancing Video Textures and Effects</h3>
+    <p>This bundle is perfect for adding an artistic touch to your videos. From subtle film grain to vibrant light leaks, the Overlay Pack offers a range of effects that can be layered on any footage for a professional, cinematic look.</p>
+    
+    <h3>What’s Inside the Overlay Pack?</h3>
+    <ul>
+        <li><strong>Light Leak:</strong> Soft, colorful leaks that add a warm, natural glow to your footage, creating a nostalgic, dreamy effect.</li>
+        
+        <li><strong>Dust & Scratches:</strong> Gives a vintage, old-film feel to your videos by adding dust particles and scratches, perfect for retro projects.</li>
+        
+        <li><strong>Film Grain:</strong> Adds a subtle grain texture to emulate the look of film, giving your digital videos an analog quality.</li>
+        
+        <li><strong>Lens Flare:</strong> Dynamic light flares to add a touch of drama to your scenes, ideal for cinematic shots and enhancing light sources.</li>
+        
+        <li><strong>Vignette:</strong> Creates a soft darkening around the edges, focusing attention on the center of the frame and adding depth.</li>
+    </ul>
+
+    <h3>Why Choose the Overlay Pack?</h3>
+    <p>The Overlay Pack provides high-quality assets to enrich your video projects effortlessly. Here’s why this pack is essential:</p>
+    
+    <ul>
+        <li><strong>Professional Quality:</strong> Each overlay is crafted to meet industry standards, ensuring stunning, polished results for your projects.</li>
+        
+        <li><strong>Easy to Use:</strong> Drag and drop overlays onto your footage for instant enhancement. Compatible with major editing software like Adobe Premiere Pro, Final Cut Pro, and DaVinci Resolve.</li>
+        
+        <li><strong>Customizable:</strong> Adjust opacity, color, and blending modes to achieve the exact look you desire, making these effects adaptable for various styles.</li>
+        
+        <li><strong>Save Time:</strong> With ready-made overlays, skip complex editing steps and quickly achieve cinematic results.</li>
+        
+        <li><strong>Versatile Usage:</strong> Ideal for filmmakers, content creators, and editors who want to add texture and light effects to their videos.</li>
+    </ul>
+
+    <h3>Bonus Features</h3>
+    <p>Purchasing the Overlay Pack includes:</p>
+    <ul>
+        <li><strong>Free Updates:</strong> Get access to new overlays as they're released, expanding your collection over time.</li>
+        <li><strong>Exclusive Tutorials:</strong> Learn creative ways to incorporate overlays into your projects for maximum effect.</li>
+        <li><strong>Customer Support:</strong> Have questions? Our support team is here to help you get the most out of your Overlay Pack.</li>
+    </ul>
+    
+    <h3>Perfect for Filmmakers, Content Creators, and Video Editors</h3>
+    <p>Whether you’re creating short films, commercials, or social media content, the Overlay Pack adds a unique, artistic touch to your videos, helping them stand out with stunning visual quality.</p>
+</div>
+
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2024 BundleFX. All Rights Reserved.</p>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        // Countdown Timer Script
+        function startCountdown(endtime,display) {
+    var timeRemaining = (0 * 60 * 60 * 1000) + (26 * 60 * 1000) + (39 * 1000);
+
+    function updateTimer() {
+        var days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+
+        display.querySelector(".days .value").textContent = days;
+        display.querySelector(".hours .value").textContent = hours;
+        display.querySelector(".minutes .value").textContent = minutes;
+        display.querySelector(".seconds .value").textContent = seconds;
+
+        // Decrease time remaining by 1 second
+        if (timeRemaining <= 0) {
+            clearInterval(interval);
+            display.textContent = "EXPIRED";
+        } else {
+            timeRemaining -= 1000;
+        }
+    }
+
+    updateTimer();
+    var interval = setInterval(updateTimer, 1000);
+}
+
+        // Scroll Progress Bar Script
+        function updateProgressBar() {
+            var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            var scrolled = (winScroll / height) * 100;
+            document.getElementById("progressBar").style.width = scrolled + "%";
+        }
+
+        // Event Listeners
+        window.addEventListener("scroll", updateProgressBar);
+
+        document.addEventListener("DOMContentLoaded", function() {
+            var countdown = document.getElementById("countdown");
+            var endTime = new Date().getTime() + 24 * 60 * 60 * 1000; // 24 hours from now
+            startCountdown(endTime, countdown);
+        });
+    </script>
+</body>
+</html>
