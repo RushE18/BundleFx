@@ -133,14 +133,19 @@ body {
 }
 
 .footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #161b22;
-    color: #8b949e;
-    font-size: 14px;
-    border-top: 1px solid #58a6ff;
+    text-align: center; /* Centers the text */
+    padding: 10px; /* Reduce padding for a smaller appearance */
+    background-color: #161b22; /* Footer background color */
+    color: #8b949e; /* Text color */
+    font-size: 14px; /* Text size */
+    border-top: 1px solid #58a6ff; /* Smaller border on top */
     margin-top: 20px;
+    max-width: 400px; /* Restrict the width */
+    margin-left: auto; /* Center horizontally */
+    margin-right: auto;
+    border-radius: 5px; /* Optional: rounded corners */
 }
+
 
 .box-link {
     text-decoration: none; /* Remove underline */
@@ -182,3 +187,81 @@ body {
     font-size: 22px;
     font-weight: bold;
 }
+.page-title {
+    text-align: center; /* Center the title */
+    margin: 20px auto; /* Add space around the title */
+    padding: 10px; /* Add padding inside the border */
+    border: 2px solid #58a6ff; /* Blue border */
+    border-radius: 10px; /* Rounded corners */
+    background-color: #161b22; /* Background color */
+    width: 80%; /* Adjust width as needed */
+    max-width: 600px; /* Prevent it from becoming too wide */
+}
+
+.page-title h1 {
+    font-size: 2.5rem; /* Large font size for the title */
+    color: #fafafa; /* Text color */
+    margin: 0; /* Remove default margin */
+}
+.instructions {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.instructions h3 {
+    font-size: 1.5rem;
+    color: #2c3e50;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.instructions ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.instructions li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-bottom: 1px solid #1e4eee;
+}
+
+.instructions li:last-child {
+    border-bottom: none;
+}
+
+.step-number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+    background-color: #3498db;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.step-content {
+    flex: 1;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.instructions em {
+    color: #e74c3c;
+    font-style: italic;
+}
+
