@@ -1,204 +1,54 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BundleFX</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        /* Additional CSS for Instructions Section */
-        .instructions {
-            margin-top: 20px;
-            padding: 15px;
-            background-color: #f9f9f9;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-        }
-        .instructions h3 {
-            font-size: 1.5em;
-            color: #333;
-            margin-bottom: 10px;
-        }
-        .instructions ol {
-            margin: 0;
-            padding-left: 20px;
-        }
-        .instructions ol li {
-            margin: 10px 0;
-            font-size: 1em;
-            line-height: 1.6;
-            color: #555;
-        }
-        .instructions p {
-            margin-top: 15px;
-            font-style: italic;
-            color: #777;
-        }
-    </style>
-</head>
-<body>
-    <!-- Scroll Progress Bar -->
-    <div id="progressBar"></div>
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
 
-    <!-- Vertical Container -->
-    <div class="vertical-container">
-        <!-- Page 1: Home Page -->
-        <div class="page">
-            <!-- Title with Border -->
-            <div class="page-title">
-                <h1>BundleFX</h1>
-            </div>
+/* Header Styling */
+header {
+    text-align: center;
+    background-color: #00A56A; /* Updated green */
+    color: white;
+    padding: 2px 0; /* Reduced padding for shorter height */
+    font-size: 15px; /* Optional: Adjust font size to match */
+    line-height: 1.2; /* Optional: Adjust line height */
+}
 
-            <!-- Product Image -->
-            <img src="35000+.png" alt="Video Assets Bundle">
+h1 {
+    font-size: 2.5em;
+}
 
-            <!-- Buy Now Button with Payment Link -->
-            <a href="https://rzp.io/rzp/ZsBhowRQ" class="button">Buy Now</a>
+/* Description Section Styling */
+.description {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    border: 5px dashed #3d4743; /* Adds a dashed border */
+}
 
-            <!-- Instruction Steps -->
-<div class="instructions">
-    <h3>How to Get Your File:</h3>
-    <ol>
-        <li>
-            <span class="step-number">1</span>
-            <div class="step-content">
-                <strong>Click "Buy Now"</strong>: Select the "Buy Now" button to proceed with your purchase.
-            </div>
-        </li>
-        <li>
-            <span class="step-number">2</span>
-            <div class="step-content">
-                <strong>Complete Payment</strong>: Follow the payment instructions on the Razorpay checkout page to complete your purchase securely.
-            </div>
-        </li>
-        <li>
-            <span class="step-number">3</span>
-            <div class="step-content">
-                <strong>Automatic Redirection</strong>: After successful payment, you will be redirected to a download page where you can access your file immediately.
-            </div>
-        </li>
-        <li>
-            <span class="step-number">4</span>
-            <div class="step-content">
-                <strong>Save Your File</strong>: On the download page, click the download button to save the file to your device.
-            </div>
-        </li>
-    </ol>
-    <p><em>Note:</em> Ensure you download the file as soon as you’re redirected. If you encounter any issues or fail to download the file, please contact our support team for assistance.</p>
-</div>
+.description ul {
+    list-style-type: none;
+    padding: 0;
+}
 
-            <!-- Countdown Timer -->
-            <div id="countdown" class="countdown-frame">
-                <div class="countdown-segment days">
-                    <span class="value">0</span>
-                    <span class="label">Days</span>
-                </div>
-                <div class="countdown-segment hours">
-                    <span class="value">0</span>
-                    <span class="label">Hours</span>
-                </div>
-                <div class="countdown-segment minutes">
-                    <span class="value">0</span>
-                    <span class="label">Minutes</span>
-                </div>
-                <div class="countdown-segment seconds">
-                    <span class="value">0</span>
-                    <span class="label">Seconds</span>
-                </div>
-            </div>
+.description li {
+    background: #e8f5e9;
+    margin: 5px 0;
+    padding: 10px;
+    border-left: 5px solid #00A56A; /* Updated green */
+}
 
-            <!-- Horizontal Container for Two Boxes -->
-            <div class="horizontal-container">
-                <!-- Box 1 Replaced with Glicth.png -->
-                <a href="product1.html" class="box-link">
-                    <div class="box-container">
-                        <div class="box">
-                            <img src="Glicth.png" alt="Glicth Effect" class="box-image">
-                        </div>
-                        <div class="product-name">Grab Now</div>
-                    </div>
-                </a>
-                
-                <!-- Box 2 -->
-                <a href="product2.html" class="box-link">
-                    <div class="box-container">
-                        <div class="box">
-                            <img src="45000+.png" alt="Product 2 Image">
-                        </div>
-                        <div class="product-name">Grab Now</div>
-                    </div>
-                </a>
-            </div>
-        </div>
-
-
-    <!-- Page 2: Bundle Details -->
-    <div class="page bundle-details">
-        <h2>BundleFX Video Bundle</h2>
-        <h3>Everything You Need Are Included In One Bundle</h3>
-        <p>Unlock new levels of creativity with the BundleFX Video Bundle. Whether you're a seasoned filmmaker or a beginner in video content creation, this bundle offers an extensive range of high-quality assets to make your videos stand out. Enhance storytelling, boost visual appeal, and create captivating scenes with ease.</p>
-        <ul>
-            <li><strong>Video Assets Pack:</strong> Over 3,500 professional video elements, including transitions, overlays, lower thirds, and customizable templates to streamline your editing process and bring polish to any project.</li>
-            <li><strong>Sound Effects Pack:</strong> More than 400 high-quality sound effects designed to add depth and intensity. From subtle ambiance to impactful cinematic sounds, these effects help you create an immersive audio-visual experience.</li>
-            <li><strong>3D Assets Pack:</strong> A versatile collection of 3D models and assets, perfect for adding a touch of realism or unique style. Great for intros, outros, or visual storytelling that calls for an extra layer of depth.</li>
-            <li><strong>200+ Visual Effects:</strong> A stunning array of visual effects to make your scenes pop. Choose from dynamic effects, color grading presets, cinematic filters, and more to give your videos a professional edge.</li>
-            <li><strong>8K Resolution Ready:</strong> All assets are optimized for up to 8K resolution, ensuring that your videos look sharp and professional on the highest-quality displays.</li>
-            <li><strong>Customizable Text Animations:</strong> A wide selection of animated text templates that can be easily customized to fit any style, adding an engaging touch to titles, credits, or captions.</li>
-            <li><strong>Color Grading Presets:</strong> Over 100 professionally designed color grading presets to enhance mood and tone. Whether you're going for a cinematic look or a vibrant aesthetic, these presets make color correction quick and effective.</li>
-            <li><strong>Drag-and-Drop Simplicity:</strong> All assets are designed for easy drag-and-drop integration into popular editing software, saving time and making it easy to create complex scenes without hassle.</li>
-         </ul>
-        <p>With the BundleFX Video Bundle, you'll have everything you need to elevate your projects, engage your audience, and produce content that feels polished and professional. Jumpstart your creative journey today!</p>
-    </div>
-
-    <!-- Footer -->
-    <div class="footer">
-        <p>&copy; 2024 BundleFX. All Rights Reserved.</p>
-    </div>
-
-    <script>
-        // Countdown Timer Script
-        function startCountdown(endtime, display) {
-            var timeRemaining = (1 * 60 * 60 * 1000) + (19 * 60 * 1000) + (46 * 1000);
-
-            function updateTimer() {
-                var days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
-                var hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                var minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
-                var seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
-
-                display.querySelector(".days .value").textContent = days;
-                display.querySelector(".hours .value").textContent = hours;
-                display.querySelector(".minutes .value").textContent = minutes;
-                display.querySelector(".seconds .value").textContent = seconds;
-
-                if (timeRemaining <= 0) {
-                    clearInterval(interval);
-                    display.textContent = "EXPIRED";
-                } else {
-                    timeRemaining -= 1000;
-                }
-            }
-
-            updateTimer();
-            var interval = setInterval(updateTimer, 1000);
-        }
-
-        // Scroll Progress Bar Script
-        function updateProgressBar() {
-            var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-            var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-            var scrolled = (winScroll / height) * 100;
-            document.getElementById("progressBar").style.width = scrolled + "%";
-        }
-
-        // Event Listeners
-        window.addEventListener("scroll", updateProgressBar);
-
-        document.addEventListener("DOMContentLoaded", function() {
-            var countdown = document.getElementById("countdown");
-            var endTime = new Date().getTime() + 24 * 60 * 60 * 1000;
-            startCountdown(endTime, countdown);
-        });
-    </script>
-</body>
-</html>
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    margin-top: 20px;
+}
